@@ -1,0 +1,124 @@
+header{
+	height: auto;
+}
+.login_bg_box{
+	height: 655px;
+	background-color: #e34c6c;
+	padding-top: 75px;
+}
+.sign_box{
+	width: 380px;
+    height: 460px;
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    margin-left: 200px;
+    padding: 15px;
+    background: #fff;
+    overflow: hidden;
+    /*text-align: center;*/
+}
+.login_title{
+	font-size: 24px;
+	margin: 30px 0;
+	height: 44px;
+}
+#login_code,#login_account{
+	padding: 0 30px;
+	/*background-color: yellow;*/
+	color: #8a8a8a;
+	cursor: pointer;
+	
+}
+#login_code{
+	border-right: 1px solid #8a8a8a;
+	color: #0aa8ff;
+}
+form{
+	width: 350px;
+	height: auto;
+	/*background-color: lightskyblue;*/
+}
+.inputBox{
+	height: 50px;
+	margin-bottom: 20px;
+	padding: 0 15px;
+}
+.inputBox input{
+	width: 340px;
+	height: 46px;
+	padding-left: 12px;
+    line-height: 46px;
+    color: #262626;
+    font-size: 116%;
+    border: 1px solid #ccc;
+}
+#idenText{
+	/*display: inline-block;*/
+	position: absolute;
+	width: 120px;
+	height: 20px;
+	/*background-color: pink;*/
+	top: 195px;
+    right: 45px;
+    padding: 9px 0;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+    color:  #333;
+    text-align: center;
+}
+#idenText:hover{
+	color: #666;
+}
+.loginBtn{
+	margin-bottom: 10px;
+	padding: 0 15px;
+}
+.loginBtn button{
+	width: 350px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    color: white;
+    background-color: #00A8FF;
+    cursor: pointer;
+    font-size: 100%;
+}
+.loginLink{
+    margin-left: 25px;
+}
+.loginLink a{
+	height: 16px;
+    line-height: 16px;
+    color: #666;
+}
+.loginLink a:hover{
+	color: #0aa8ff;
+}
+.thirdLogin{
+	width: 350px;
+	height: 70px;
+	/*background-color: yellow;*/
+	margin-top: 80px;
+	margin-bottom: 10px;
+	text-align: center;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+.thirdLogin_text{
+	position: absolute;
+	left: 70px;
+    width: 210px;
+    top: -24px;
+    background-color: #fff;
+    color: #666;
+}
+.thirdLogin_account img{
+	margin-top: 35px;
+    text-align: center;
+}
+.tips{
+	display: none;
+	color: red;
+	font-size: 10px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录注册_ASUS华硕电脑非官方商城</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="commondCss/header.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/login.js" ></script>
+	</head>
+	<body>
+		<header class="header_main c">
+			<div class="c">
+				<div class="header_logo l">
+					<a href="index.html">
+						<img src="img/logo.png" />
+					</a>
+				</div>
+			</div>
+		</header>
+		
+		<div class="login_bg_box">
+			<div class="c">
+				<img src="img/login/login_bg.jpg" />
+			</div>
+			
+			<div class="sign_box">
+				<div class="login_title">
+					<span id="login_code">验证码登录</span>
+					<span id="login_account">账号登录</span>
+				</div>
+				
+				<form id="loginCode" style="display: block;">
+					<div class="inputBox">
+						<input class="in" type="text" placeholder="手机号" />
+						<p class="tips">*请正确输入手机号！*</p>
+					</div>
+					<div class="inputBox">
+						<input class="in" type="text" placeholder="短信验证码" />
+						<p class="tips">*请正确输入验证码！*</p>
+						<span id="idenText">获取验证码</span>
+					</div>
+					<br />
+					<div class="loginBtn">
+						<button>
+							<span>立即登录</span>
+						</button>
+					</div>
+					
+					<div class="loginLink">
+						<a href="register.html" class="l">未有账户？去注册<a>
+						<a href="" class="r">忘记密码？</a>
+					</div>
+					
+					<div class="thirdLogin">
+						<div class="thirdLogin_text">
+							<p>第三方登录</p>
+							<p>无需注册</p>
+						</div>
+						<span class="thirdLogin_account">
+							<a href="">
+								<img src="img/login/weixin.png" />
+							</a>
+						</span>
+					</div>
+					
+				</form>
+				
+				<form id="loginAccount" style="display: none;">
+					<div class="inputBox">
+						<input class="in" type="text" placeholder="用户名/邮箱地址/手机号" />
+						<p class="tips">*请正确输入用户名/邮箱地址/手机号！*</p>
+					</div>
+					<div class="inputBox">
+						<input class="in" type="text" placeholder="填写密码" />
+						<p class="tips">*密码错误！*</p>
+					</div>
+					<br />
+					<div class="loginBtn">
+						<button>
+							<span>立即登录</span>
+						</button>
+					</div>
+					
+					<div class="loginLink">
+						<a href="" class="l">未有账户？去注册<a>
+						<a href="" class="r">忘记密码？</a>
+					</div>
+					
+					<div class="thirdLogin">
+						<div class="thirdLogin_text">
+							<p>第三方登录</p>
+							<p>无需注册</p>
+						</div>
+						<span class="thirdLogin_account">
+							<a href="">
+								<img src="img/login/weixin.png" />
+							</a>
+						</span>
+					</div>
+					
+				</form>
+				
+			</div>
+		</div>
+		
+	</body>
+</html>

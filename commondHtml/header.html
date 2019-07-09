@@ -1,0 +1,128 @@
+<!--头部-->
+<header>
+	<div class="header_topBar">
+		<div class="c">
+			<div class="fast_bar l">
+				<a href="#">服务中心</a>
+				<a href="oldChangeNew.html">以旧换新</a>
+				<a href="#">新机租赁</a>
+			</div>
+			<div class="login_bar r">
+				<ul>
+					<li class="right_bar l">
+						<a href="login.html">登录</a>
+					</li>
+					<li class="right_bar l">
+						<a href="register.html">注册</a>
+					</li>
+					<li class="right_bar l">
+						<a>消息</a>
+					</li>
+					<li class="right_bar l">
+						<a href="#">我的订单</a>
+					</li>
+					<li class="right_bar l">
+						<i></i>
+						<a href="#">购物车</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="header_main">
+		<div class="header_bottom">
+			<div class="header_logo l">
+				<a href="index.html">
+					<img src="img/logo.png" />
+				</a>
+			</div>
+	
+			<div class="header_nav l">
+				<ul>
+					<li class="nav_item">
+						<a href="index.html">华硕非官网</a>
+					</li>
+					<li class="nav_item">
+						<a href="index.html">个人及家用产品</a>
+					</li>
+					<li class="nav_item">
+						<a href="index.html">热门活动</a>
+					</li>
+					<li class="nav_item">
+						<a href="index.html">商用产品</a>
+					</li>
+					<li class="nav_item">
+						<a href="index.html">服务与支持</a>
+					</li>
+				</ul>
+			</div>
+	
+			<div class="header_search l">
+				<div class="search">
+					<input class="search_input l" placeholder="ASUS华硕商城"></input>
+					<button class="search_btn l">
+						<span class="iconfont">&#xe62d;</span>
+					</button>
+				</div>
+				<div class="hots_link">
+					<a href="">玩家游戏本</a>
+					<a href="">时尚轻薄本</a>
+				</div>
+			</div>
+	
+			
+	
+		</div>
+	
+	</div>
+	
+	
+	<script>
+		//吸顶效果
+		$(function(){
+			var navTop = $('.header_main').offset().top;
+			
+			$(document).on('scroll',function(){
+				var scrollTop = $(document).scrollTop();
+//				console.log(navTop,scrollTop)
+				
+				if (scrollTop > navTop) {
+					$('.header_main').css({
+						'position':'fixed',
+						'top':0
+					})
+					$('.header_nav').css({
+						'display':'none'
+					})
+					$('.hots_link').css({
+						'display':'none'
+					})
+					$('.header_logo').css({
+						'margin':'0 150px 0 300px'
+					})
+				} else{
+					$('.header_main').css({
+						'position':'',
+						'top':''
+					})
+					$('.header_nav').css({
+						'display':'block'
+					})
+					$('.hots_link').css({
+						'display':'block'
+					})
+					$('.header_logo').css({
+						'margin':''
+					})
+				}
+				
+			})
+			
+		})
+		
+		
+		
+	</script>
+
+</header>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录注册_ASUS华硕电脑非官方商城</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/register.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/register.js" ></script>
+	</head>
+	<body>
+		<div style="height: 100px;"></div>
+		<div class="register_box">
+			<div class="register_title">
+				<h2>注册华硕商城账号</h2>
+			</div>
+			<form id="register">
+				<div class="inputBox">
+					<input type="text" placeholder="请输入11位手机号" />
+					<p class="tips">*请正确输入手机号！*</p>
+				</div>
+				<div class="inputBox">
+					<input id="inputBox2" type="text" placeholder="请输入验证码" />
+					<button id="idenText">获取短信验证码</button>
+					<p class="tips">*请正确输入验证码！*</p>
+				</div>
+				<div class="registerBtn">
+					<button>注&emsp;册</button>
+				</div>
+				<br />
+				<div class="checkBox">
+					<input id="checkBox" type="checkbox" onclick="checkboxOnclick(this)"/>
+					<span>我已阅读并同意会员注册协议和隐私保护政策</span>
+					<p class="tips">*未勾选协议！*</p>
+				</div>
+				<a id="loginLink" href="login.html">已有账号，去登陆</a>
+			</form>
+		</div>
+		<!--验证是否勾选了协议-->
+		<script>
+			function checkboxOnclick(checkbox){
+				if (checkbox.checked == true) {
+					$('.registerBtn button').css('background-color','#0aa8ff');
+					$('.checkBox p').css('display','none');
+				} else{
+					$('.registerBtn button').css('background-color','gray');
+					$('.checkBox p').css('display','block');
+				}
+			}
+		</script>
+	</body>
+</html>
